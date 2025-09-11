@@ -12,7 +12,7 @@ source:
   sha256: cd7d60f140a405d03581b771594a0885dad6862e3c26ceaa303d8e8b781ec539
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
