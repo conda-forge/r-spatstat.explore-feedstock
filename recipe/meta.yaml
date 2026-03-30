@@ -1,15 +1,15 @@
-{% set version = "3.7-0" %}
+{% set version = "3.8-0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-spatstat.explore
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/spatstat.explore_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/spatstat.explore/spatstat.explore_{{ version }}.tar.gz
-  sha256: 257da9c0007c09952e448d8007e3d9f773e2983cb4cd108cdfda8c42935ba23f
+  sha256: 6f297469ea8dfeb1b396dd523660424411d90ef6944629d6839abc287366b1ed
 
 build:
   number: 0
@@ -50,11 +50,11 @@ requirements:
     - r-goftest >=1.2_2
     - r-nlme
     - r-spatstat.data >=3.1_9
-    - r-spatstat.geom >=3.6_1
-    - r-spatstat.random >=3.4_2
+    - r-spatstat.geom >=3.7_2
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_5
-    - r-spatstat.utils >=3.2
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
   run:
     - r-base
     - r-matrix
@@ -62,11 +62,11 @@ requirements:
     - r-goftest >=1.2_2
     - r-nlme
     - r-spatstat.data >=3.1_9
-    - r-spatstat.geom >=3.6_1
-    - r-spatstat.random >=3.4_2
+    - r-spatstat.geom >=3.7_2
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_5
-    - r-spatstat.utils >=3.2
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
 
 test:
   commands:
@@ -77,9 +77,9 @@ about:
   home: http://spatstat.org/
   dev_url: https://github.com/spatstat/spatstat.explore
   license: GPL-2.0-or-later
-  summary: Functionality for exploratory data analysis and nonparametric analysis of spatial data, mainly spatial point patterns, in the 'spatstat' family of packages. (Excludes analysis of spatial data on a linear network, which is covered by the separate package 'spatstat.linnet'.) Methods include quadrat counts, K-functions
-    and their simulation envelopes, nearest neighbour distance and empty space statistics, Fry plots, pair correlation function, kernel smoothed intensity, relative risk estimation with cross-validated bandwidth selection, mark correlation functions, segregation indices, mark dependence diagnostics, and kernel estimates
-    of covariate effects. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA) are also supported.
+  summary: Functionality for exploratory data analysis and nonparametric analysis of spatial data, mainly spatial point patterns, in the 'spatstat' family of packages. (Excludes analysis of spatial data on a linear network, which is covered by the separate package 'spatstat.linnet'.) Methods include quadrat counts, 
+    K-functions and their simulation envelopes, nearest neighbour distance and empty space statistics, Fry plots, pair correlation function, kernel smoothed intensity, relative risk estimation with cross-validated bandwidth selection, mark correlation functions, segregation indices, mark dependence diagnostics, and 
+    kernel estimates of covariate effects. Formal hypothesis tests of random pattern (chi-squared, Kolmogorov-Smirnov, Monte Carlo, Diggle-Cressie-Loosmore-Ford, Dao-Genton, two-stage Monte Carlo) and tests for covariate effects (Cox-Berman-Waller-Lawson, Kolmogorov-Smirnov, ANOVA) are also supported.
   license_family: GPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
