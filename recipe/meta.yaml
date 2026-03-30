@@ -50,11 +50,11 @@ requirements:
     - r-goftest >=1.2_2
     - r-nlme
     - r-spatstat.data >=3.1_9
-    - r-spatstat.geom >=3.6_1
-    - r-spatstat.random >=3.4_2
+    - r-spatstat.geom >=3.7_2
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_5
-    - r-spatstat.utils >=3.2
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
   run:
     - r-base
     - r-matrix
@@ -62,11 +62,11 @@ requirements:
     - r-goftest >=1.2_2
     - r-nlme
     - r-spatstat.data >=3.1_9
-    - r-spatstat.geom >=3.6_1
-    - r-spatstat.random >=3.4_2
+    - r-spatstat.geom >=3.7_2
+    - r-spatstat.random >=3.4_5
     - r-spatstat.sparse >=3.1
-    - r-spatstat.univar >=3.1_5
-    - r-spatstat.utils >=3.2
+    - r-spatstat.univar >=3.1_7
+    - r-spatstat.utils >=3.2_2
 
 test:
   commands:
